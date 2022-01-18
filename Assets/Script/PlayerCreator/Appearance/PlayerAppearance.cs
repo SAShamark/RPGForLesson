@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-namespace PlayerCreator
+namespace PlayerCreator.PlayerCreator
 {
     public class PlayerAppearance : MonoBehaviour
     {
@@ -12,13 +12,7 @@ namespace PlayerCreator
         [SerializeField] private SpriteRenderer _ears;
         [SerializeField] private SpriteRenderer _eyebrows;
 
-        public SpriteRenderer Hair => _hair;
-        public SpriteRenderer Eyes => _eyes;
-        public SpriteRenderer Mouth => _mouth;
-        public SpriteRenderer Beard => _beard;
-        public SpriteRenderer Ears => _ears;
-        public SpriteRenderer Eyebrows => _eyebrows;
-
+        
         public SpriteRenderer GetFeatureSprite(AppearanceFeature feature)
         {
             switch (feature)

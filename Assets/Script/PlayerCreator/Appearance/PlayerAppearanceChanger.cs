@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using Serialization;
 
-namespace PlayerCreator
+namespace PlayerCreator.PlayerCreator
 {
 
     public class PlayerAppearanceChanger : MonoBehaviour

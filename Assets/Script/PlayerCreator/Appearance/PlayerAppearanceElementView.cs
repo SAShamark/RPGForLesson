@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace PlayerCreator
+namespace PlayerCreator.PlayerCreator
 {
     public class PlayerAppearanceElementView : MonoBehaviour
     {

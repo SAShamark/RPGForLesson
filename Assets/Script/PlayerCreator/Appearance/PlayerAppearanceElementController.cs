@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.PlayerCreator
 {
     public class PlayerAppearanceElementController : ScriptableObject
     {
@@ -16,7 +16,6 @@ namespace PlayerCreator
             _index = index;
             _view = view; ;
             _appearanceFeatureSprites = featureSprites;
-            //_appearanceFeatureSprites.Sprites.Insert(index: 0, item: null);
             _spriteRenderer = spriteRenderer;
             _view.ElementHeader.text = _appearanceFeatureSprites.AppearanceFeature.ToString();
             _view.RightArrow.onClick.AddListener(NextElement);

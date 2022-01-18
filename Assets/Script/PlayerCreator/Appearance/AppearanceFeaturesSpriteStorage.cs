@@ -1,4 +1,4 @@
-using PlayerCreator;
+using PlayerCreator.PlayerCreator;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "AppearanceFeaturesSpriteStorage", menuName = "PlayerAppearance/AppearanceFeatures")]

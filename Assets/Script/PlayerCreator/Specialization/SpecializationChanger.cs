@@ -66,7 +66,7 @@ namespace PlayerCreator.Specialization
                 StatView statView = _objectPool.GetObject(_specializationView.StatView);
                 statView.transform.SetParent(_specializationView.StatContainer);
                 statView.transform.localScale = Vector3.one;
-                statView.StatAmount.text = stat.Amount.ToString();
+                statView.StatAmount.text = stat.Value.ToString();
                 statView.StatType.text = stat.StatType.ToString();
                 _statViews.Add(statView);
             }

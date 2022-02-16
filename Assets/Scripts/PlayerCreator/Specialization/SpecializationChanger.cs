@@ -14,8 +14,12 @@ namespace PlayerCreator.Specialization
         private ObjectPool _objectPool;
         private int _currentIndex;
 
+        public int CurrentIndex => _currentIndex;
+
         private void Start()
         {
+            _currentIndex = PlayerPrefs.GetInt("ClassType");
+            
             _skillViews = new List<SkillView>();
             _statViews = new List<StatView>();
             _objectPool = ObjectPool.Instance;

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.PlayerLoop;
 
 namespace GamePlay
 {
@@ -11,11 +12,14 @@ namespace GamePlay
 
         public StatType StatType => _statType;
         public int Value => _value;
-        public Stat(StatType statType,int value)
+
+
+        public Stat(StatType statType, int value)
         {
             _statType = statType;
             _value = value;
         }
+
         public void SetValue(int value)
         {
             _value = value;

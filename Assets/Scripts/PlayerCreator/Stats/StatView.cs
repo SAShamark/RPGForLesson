@@ -21,6 +21,7 @@ namespace PlayerCreator.Stats
         public event Action<StatView> OnStatViewDecreaseClicked;
         public event Action<StatView, int> OnStatViewValueClicked;
         public int MaxValue => _statsButtons.Count;
+
         public void Initialize(string statText)
         {
             _statsButtons = _statButtonsContainer.GetComponentsInChildren<StatButton>().ToList();
@@ -33,6 +34,7 @@ namespace PlayerCreator.Stats
                 statButton.OnClicked += OnStatButtonClicked;
             }
         }
+
         private void SetButtonsState(int value)
         {
             foreach (var statButton in _statsButtons)
@@ -40,25 +42,29 @@ namespace PlayerCreator.Stats
                 statButton.SetState(_statsButtons.IndexOf(statButton) < value);
             }
         }
+
         private void OnIncriseButtonClicked()
         {
             OnStatViewIncreaseClicked?.Invoke(this);
         }
+
         private void OnDecriseButtonClicked()
         {
             OnStatViewDecreaseClicked?.Invoke(this);
-
         }
+
         private void OnStatButtonClicked(StatButton statButton)
         {
             OnStatViewValueClicked?.Invoke(this, _statsButtons.IndexOf(statButton));
         }
+
         public void UpdateView(bool canIncrease, bool canDecrease, int value)
         {
             _decreaseButton.enabled = canDecrease;
             _increaseButton.enabled = canIncrease;
             ChangeStat(value);
         }
+
         private void ChangeStat(int statValue)
         {
             _statValue.text = statValue.ToString();

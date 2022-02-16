@@ -10,14 +10,25 @@ namespace PlayerCreator.Stats
         private List<StatViewData> _statViewsData;
         private int _freeStats;
 
+        public int FreeStats => _freeStats;
+
         private void Start()
         {
             _statViewsData = new List<StatViewData>();
+            if (PlayerPrefs.GetInt("firstSave") == 1)
+            {
+                _freeStats = PlayerPrefs.GetInt("FreeStats");
+            }
+            else
+            {
+                _freeStats = 10;
+            }
 
             List<Stat> stats = new List<Stat>
-                {new Stat(StatType.Agility, 2), new Stat(StatType.Intelligence, 1), new Stat(StatType.Strength, 1)};
-
-            _freeStats = 10;
+            {
+                new Stat(StatType.Agility, 2), new Stat(StatType.Intelligence, 1),
+                new Stat(StatType.Strength, 1)
+            };
 
 
             _statsView.FreeStatsText.text = $"Stats left:{_freeStats}";

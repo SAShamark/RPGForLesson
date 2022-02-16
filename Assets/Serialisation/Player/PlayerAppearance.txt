@@ -1,1 +1,0 @@
-{"Hair":1,"Eyes":1,"Mouth":0,"Beard":1}

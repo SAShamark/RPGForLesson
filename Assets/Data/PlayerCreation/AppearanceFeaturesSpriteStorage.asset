@@ -15,29 +15,30 @@ MonoBehaviour:
   _appearanceFeatureSprites:
   - _appearanceFeature: 1
     _sprites:
-    - {fileID: 21300000, guid: c4fb4d4f7dc3b82438a34377cf0e5fc5, type: 3}
-    - {fileID: 21300000, guid: 181898c4efb402c47945341aab44277f, type: 3}
-    - {fileID: 21300000, guid: fecaff34b9a8de544b217a1d37869768, type: 3}
+    - {fileID: 21300000, guid: d01ac39b9f0f2e841b044755c14f961c, type: 3}
+    - {fileID: 21300000, guid: a5ec2d495fd62fd44924de39d8616f15, type: 3}
+    - {fileID: 21300000, guid: 23df0852fa4518e49bd5e26901d045c5, type: 3}
     - {fileID: 0}
   - _appearanceFeature: 2
     _sprites:
-    - {fileID: 21300000, guid: 92fbc0d37d8ad2843921ce2f0450d194, type: 3}
-    - {fileID: 21300000, guid: 8af072d9e54ae824dbcd4c67c7eac50d, type: 3}
-    - {fileID: 21300000, guid: 7d29a6168b8188249a81304debfac1f6, type: 3}
+    - {fileID: 21300000, guid: 6014687042f877048b16da52cb8179c9, type: 3}
+    - {fileID: 21300000, guid: 75925b2debaf72e468088b76c229b259, type: 3}
+    - {fileID: 21300000, guid: 4a4bf19b4b89be643b08c1c73030d2f9, type: 3}
   - _appearanceFeature: 3
     _sprites:
-    - {fileID: 21300000, guid: 99920a890df6abc41ac65b3e8566d49d, type: 3}
-    - {fileID: 21300000, guid: d140943fa3a058e4fb442936e1540516, type: 3}
-    - {fileID: 21300000, guid: d125c0f0db560064097c7a5eb908ce8a, type: 3}
+    - {fileID: 21300000, guid: 9e8c616f25afc8847bbe1b89662e702b, type: 3}
+    - {fileID: 21300000, guid: 080f9966e5c079442b05c9a1102daeba, type: 3}
+    - {fileID: 21300000, guid: 426a78bf5d854624994205f7e8b373b5, type: 3}
   - _appearanceFeature: 4
     _sprites:
-    - {fileID: 6591478365344907407, guid: 2ad7c91ea697fea4ba69310a62559e90, type: 3}
-    - {fileID: 6591478365344907407, guid: b2415f038c8b1484db07ddd3445b204b, type: 3}
+    - {fileID: 6591478365344907407, guid: 2370b5aaffba1594cab9f3e906998635, type: 3}
+    - {fileID: 6591478365344907407, guid: f1408e0e116ec3946a15c216eb33f864, type: 3}
     - {fileID: 0}
   - _appearanceFeature: 5
-    _sprites: []
+    _sprites:
+    - {fileID: 0}
   - _appearanceFeature: 6
     _sprites:
-    - {fileID: 21300000, guid: 5bfc6e175255e2c48b850861f9e084b4, type: 3}
-    - {fileID: 21300000, guid: fc3420a0e48d52d4fb6df0048ad88b3f, type: 3}
-    - {fileID: 21300000, guid: 282e8ed7eaf75284aab6a8ab5a9cbdcc, type: 3}
+    - {fileID: 21300000, guid: 71e8bead7de2e8f48bf7e94a892c4d07, type: 3}
+    - {fileID: 21300000, guid: e90fdd11d728b3942bd763bca7de929b, type: 3}
+    - {fileID: 21300000, guid: f2b42c4c37df98e48a075e4da26f7532, type: 3}

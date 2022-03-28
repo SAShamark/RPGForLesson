@@ -22,6 +22,8 @@ MonoBehaviour:
       _value: 2
     - _statType: 2
       _value: 1
+    - _statType: 3
+      _value: 0
     _startSkills:
     - _skillType: 1
       _skillName: Bash
@@ -37,7 +39,7 @@ MonoBehaviour:
     _specializationDescription: mlknk
     _startStats:
     - _statType: 1
-      _value: 1
+      _value: 2
     - _statType: 2
       _value: 1
     - _statType: 3

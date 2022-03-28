@@ -5,14 +5,18 @@ namespace Serialization
 {
     public static class Serializator
     {
-        public static void SerealizateData(object data, string savePath)
+        public static void Serealizate(object data, string path)
         {
             string serialisedData = JsonConvert.SerializeObject(data);
-            File.WriteAllText(savePath, serialisedData);
+            File.WriteAllText(path, serialisedData);
         }
-        public static T Deserializate<T>(string savePath)
+        public static T Deserializate<T>(string path)
         {
-            string serialisedData = File.ReadAllText(savePath);
+            if (!File.Exists(path))
+            {
+                return default;
+            }
+            string serialisedData = File.ReadAllText(path);
             return JsonConvert.DeserializeObject<T>(serialisedData);
 
         }

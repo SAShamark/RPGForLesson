@@ -3,7 +3,7 @@ using System;
 
 namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearance : MonoBehaviour
+    public class Appearance : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _hair;
         [SerializeField] private SpriteRenderer _eyes;

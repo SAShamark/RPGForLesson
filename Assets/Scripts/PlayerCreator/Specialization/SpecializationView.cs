@@ -1,19 +1,18 @@
+using CoreUI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace PlayerCreator.Specialization
 {
-    public class PlayerSpecializationView : MonoBehaviour
+    public class SpecializationView : BaseView
     {
-        [Header("Header")]
-        [SerializeField] private Image _specializationIcon;
+        [Header("Header")] [SerializeField] private Image _specializationIcon;
         [SerializeField] private TMP_Text _specializationName;
         [SerializeField] private Button _leftArrow;
         [SerializeField] private Button _rightArrow;
 
-        [Header("Body")]
-        [SerializeField] private TMP_Text _description;
+        [Header("Body")] [SerializeField] private TMP_Text _description;
         [SerializeField] private Transform _statContainer;
         [SerializeField] private StatView _statView;
         [SerializeField] private Transform _skillContainer;
@@ -28,6 +27,5 @@ namespace PlayerCreator.Specialization
         public StatView StatView => _statView;
         public Transform SkillContainer => _skillContainer;
         public SkillView SkillView => _skillView;
-
     }
 }

@@ -1,1 +1,1 @@
-{"Hair":0,"Eyes":2,"Mouth":0,"Beard":1,"Ears":0,"Eyebrows":0}
+{"Hair":3,"Eyes":1,"Mouth":2,"Beard":2,"Ears":0,"Eyebrows":2}

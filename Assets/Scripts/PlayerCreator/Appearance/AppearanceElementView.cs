@@ -4,7 +4,7 @@ using TMPro;
 
 namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearanceElementView : MonoBehaviour
+    public class AppearanceElementView : MonoBehaviour
     {
         [SerializeField] private TMP_Text _elementHeader;
         [SerializeField] private TMP_Text _styleHeader;

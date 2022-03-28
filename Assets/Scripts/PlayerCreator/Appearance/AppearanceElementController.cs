@@ -2,15 +2,15 @@
 
 namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearanceElementController
+    public class AppearanceElementController
     {
-        private readonly PlayerAppearanceElementView _view;
+        private readonly AppearanceElementView _view;
         private readonly AppearanceFeatureSprites _appearanceFeatureSprites;
         private readonly SpriteRenderer _spriteRenderer;
         private int _index;
         public int Index => _index;
         public AppearanceFeature AppearanceFeature => _appearanceFeatureSprites.AppearanceFeature;
-        public PlayerAppearanceElementController(PlayerAppearanceElementView view,
+        public AppearanceElementController(AppearanceElementView view,
             AppearanceFeatureSprites featureSprites, SpriteRenderer spriteRenderer, int index)
         {
             _index = index;

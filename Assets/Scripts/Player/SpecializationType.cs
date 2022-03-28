@@ -1,4 +1,4 @@
-namespace GamePlay
+namespace Player
 {
     public enum SpecializationType
     {

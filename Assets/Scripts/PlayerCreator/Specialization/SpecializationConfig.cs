@@ -2,6 +2,7 @@
 using System;
 using GamePlay;
 using System.Collections.Generic;
+using Player;
 
 namespace PlayerCreator.Specialization
 {

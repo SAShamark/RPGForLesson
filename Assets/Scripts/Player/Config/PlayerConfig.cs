@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamePlay;
+using Player.Enum;
 using UnityEngine;
 
 namespace Player.Config
@@ -7,28 +8,25 @@ namespace Player.Config
     public class PlayerConfig
     {
         public int Id { get; }
-        public string Name { get; }
-        public List<Stat> Stats { get; }
-public SpecializationType SpecializationType { get;private set; }
-        public List<AppearanceFeatureSprite> AppearanceFeatureSprites { get;  }
+        public string PlayerName { get; }
+        public List<Stat> StartStats { get; }
+        public SpecializationType SpecializationType { get; }
+        public Dictionary<AppearanceFeature, string> AppearanceFeatures { get; }
 
-        public PlayerConfig()
+        public PlayerConfig(string playerName, List<Stat> startStats, SpecializationType specializationType, Dictionary<AppearanceFeature, string> appearanceFeatures)
         {
             if (!PlayerPrefs.HasKey("CharacterCount"))
             {
                 PlayerPrefs.SetInt("CharacterCount", 0);
             }
-
             int characterCount = PlayerPrefs.GetInt("CharacterCount");
-            characterCount++;
             Id = characterCount;
-            Stats = new List<Stat>();
-            AppearanceFeatureSprites = new List<AppearanceFeatureSprite>();
-        }
+            PlayerPrefs.SetInt("CharacterCount", Id+1);
 
-        public void SetSpecialization(SpecializationType specializationType)
-        {
+            PlayerName = playerName;
+            StartStats = startStats;
             SpecializationType = specializationType;
+            AppearanceFeatures = appearanceFeatures;
         }
     }
 }

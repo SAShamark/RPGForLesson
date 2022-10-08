@@ -1,10 +1,20 @@
 namespace GamePlay
 {
-    public enum StatType
+    public enum StatType 
     {
-        Name = 0,
-        Strength = 1,
-        Agility = 2,
-        Intelligence = 3,
+        None,
+        Strength,
+        Agility,
+        Intelligence,
     }
+    
+    //Warrior 
+    //Strength = 3
+    //Agility 1,
+    //Intelligence = 0
+    
+    //Assassin
+    //Strength = 1
+    //Agility 2,
+    //Intelligence = 1
 }
